@@ -1,0 +1,141 @@
+<!--CITATIONS-->
+<!--https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions for animation and navigation bar-->
+<!--https://www.w3schools.com/cssref/pr_pos_z-index.asp for Z index reference-->
+<!--https://www.w3schools.com/howto/howto_css_modals.asp for modal reference-->
+<!--https://www.w3schools.com/howto/howto_js_slideshow.asp for slideshow reference-->
+<!--https://www.w3schools.com/cssref/pr_background-attachment.asp for sticky background-->
+<!--https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp for navigation bar scrolling-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>MP1</title>
+    </head>
+
+
+    <!-- navbar -->
+    <header id="navi">
+        <a id="name"> Zhengyu Li</a>
+        <div id="rightNav">
+            <a id="node1" href="#sp">Software Projects</a>
+            <a id="node2" href="#mv">Music Videos</a>
+            <a id="node3" href="#cm">Contact Me</a>
+        </div>
+    </header>
+    
+    
+    <!-- sections -->
+    <div id="title0">
+        <a name="info"></a>
+        <h1>About me</h1> <i class="fa fa-car" style="font: size 10px;"> </i>
+        <p> My name is Zhengyu Li and I am a Master of Computer Science student in University of Illinois at Urbana-Champaign.</p>
+        <p> Student of technology. Art appreciator. Digital craftsman. I make software and artistic projects. 
+            Welcome to my website.
+        </p> 
+    </div>
+
+    <div id = "title1">
+        <a name="sp"></a>
+        <h1>Software Projects</h1>
+        <p>click picture for more information</p>
+        <!-- flex-container -->
+        <div class="flex-container">
+            <div class="section" id="section1" >
+                <p>Proust Musuem of Digital Relics</p>
+                <img src="assets/proust.png">
+            </div>
+            <div class="section" id="section2">
+                <p>EventGatherer</p>
+                <img src="assets/gatherer.png">
+            </div>
+            <div class="section" id="section3">
+                <p>Minority Supplier Development in China</p>
+                <img src="assets/msdc.png">
+            </div>
+        </div>
+
+        <!-- modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content" id="content1">
+                <span class="close" id="close1">&times;</span>
+                <p> Proust Musuem of Digital Relics</p>
+                <img src="assets/proust.png">
+                <p> “...the memory of a particular image is but regret for a particular moment..” -- Marcel Proust, In Search of Lost time
+                    This website is a rememberance of human beings' digital memories. 
+                </p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content" id="content2">
+                <span class="close" id="close2">&times;</span>
+                <p> EventGatherer</p>
+                <img src="assets/gatherer.png">
+                <p> An application built for us to get a sense of events around you.
+                </p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content" id="content3">
+                <span class="close" id="close3">&times;</span>
+                <p> Minority Supplier Development in China</p>
+                <img src="assets/msdc.png">
+                <p> A database-driven website that gathers information about small business in China that are owned by ethnic minorities, women, veteran, LGBTQIA and people in the ethnic minority autonomous regions.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="title2">
+        <a name="mv"><br></a>
+        <h1>Music Videos</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <!-- video -->
+                <a name = "s1"></a>
+                <video class="video" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/soundOfSilence.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="mySlides fade">
+                <video class="video" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/rainbow.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="mySlides fade">
+                <video class="video" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="assets/Lilian.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <!-- Next and previous(UNICODE: &#10095;) buttons -->
+            <div id="arrow1" class="prev">&#10094;</div>
+            <div id="arrow2" class="next">&#10095;</div>
+        </div>
+    </div>
+
+    <div id="title3">
+        <a name="cm"><br></a>
+        <div id = "info">
+            <h1>Contanct Me</h1>
+            <img src = "assets/contact.png" id = "tab">
+            <a href="https://github.com/ZhengyuLi0929"> <img src="assets/github.png">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <p><br>
+            <br>
+            Constructed on Sep 29th, 2022<br>
+        <a href="zhengyu6@illinios.edu">zhengyu6@illinios.edu</a><br>
+        All rights reserved<br>
+        </p>
+    </footer>
+</html>
